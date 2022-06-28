@@ -1,0 +1,307 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title style="font-family:ARIAL;position: absolute; top: 2.5%; left: 79.3%;">חיפוש בית משפט</title>
+            <meta name="viewport" content="width=device-width , initial-scale=1.0, user-scaleable=yes">
+            <link rel="stylesheet" href="styling.css">
+            </head>
+            <style>
+                body{
+                          background-image:url(./images/בית-משפט-השלום-אשקלון.jpg);
+                          background-repeat: no-repeat;
+                          background-attachment: fixed;
+                          background-size: cover;
+                          
+                          }
+                #myInput {
+                            background-image: url('./images/1024px-Search_Icon.svg.png'); /* Add a search icon to input */
+                            background-position: 10px 12px; /* Position the search icon */
+                            background-repeat: no-repeat; /* Do not repeat the icon image */
+                            width: 50%; /* Full-width */
+                            font-size: 16px; /* Increase font-size */
+                            padding: 12px 20px 12px 40px; /* Add some padding */
+                            border: 1px solid #ddd; /* Add a grey border */
+                            margin-bottom: 12px; /* Add some space below the input */
+                            margin-left: 220px;
+                          }
+      
+              #myTable {
+                text-align: right;
+                border-collapse: collapse; /* Collapse borders */
+                width: 100%; /* Full-width */
+                border: 1px solid #ddd; /* Add a grey border */
+                font-size: 15px; /* Increase font-size */
+                background-color: white;
+              }
+      
+              #myTable th, #myTable td {
+                text-align: right; /* Left-align text */
+                padding: 12px; /* Add padding */
+              }
+      
+              #myTable tr {
+                text-align: right;
+                /* Add a bottom border to all table rows */
+                border-bottom: 1px solid #ddd;
+              }
+      
+              #myTable tr.header, #myTable tr:hover {
+                text-align: right;
+                /* Add a grey background color to the table header and on hover */
+                background-color: #f1f1f1;
+              }
+              
+                      .topnav {
+                overflow: hidden;
+                background-color: #e9e9e9;
+              }
+                
+                #findOnMap{
+                    size: 100px;
+                    color: green;
+                }
+      
+              /* Style the links inside the navigation bar */
+              .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+              }
+      
+              /* Change the color of links on hover */
+              .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+              }
+      
+              /* Style the "active" element to highlight the current page */
+              .topnav a.active {
+                background-color: #2196F3;
+                color: white;
+              }
+      
+              /* Style the search box inside the navigation bar */
+              .topnav input[type=text] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+              }
+      
+              /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+              @media screen and (max-width: 600px) {
+                .topnav a, .topnav input[type=text] {
+                  float: none;
+                  display: block;
+                  text-align: left;
+                  width: 100%;
+                  margin: 0;
+                  padding: 14px;
+                }
+                .topnav input[type=text] {
+                  border: 1px solid #ccc;
+                }
+              }
+      
+          </style>
+            <body>
+            <div id="container">
+                <div id="header">
+                <div id="brand">
+                  <h1>  <a href="./index.html" style="color: rgb(255, 255, 255); box-shadow: 2px;font-family:ARIAL;position: absolute; top: 2.5%; left: 62%;">חיפוש בית משפט</a></h1>
+                    </div>
+                </div>
+                <div id="menu">
+                <ul style="position: absolute;left: 60%;">
+                    <li><a href="./about.html" style="font-family:ARIAL;">אודות</a></li>
+                    <li><a href="./index.html" style="font-family:ARIAL;">דף הבית</a></li>
+
+                    </ul>                
+                </div>
+                <div>
+                    <div style="position: absolute; top: 2.5%; left: 15%;">
+                        <a href= "./index.html"> <img src="./images/rlogo.jpg" width="150" height="100"></a>
+                    </div>
+                    <br>
+                    
+                    <input type="text" style="text-align: right;" id="myInput" onkeyup="myFunction()" placeholder="...חפש לפי תחום עיסוק">
+            
+                    <table id="myTable" style="width: 1050px;font-family:ARIAL; text-align: right;">
+                          <tr class="header">
+                            <th style="width:60%;font-family:ARIAL;">תחום עיסוק</th>
+                            <th style="width:50%;font-family:ARIAL;">שם בית המשפט</th>
+                          </tr>
+                          <tr>
+                            <td>תביעות קטנות</td>
+                            <td><a href="https://www.gov.il/he/departments/bureaus/courts_reception_of_the_public_ashkelon" target="_blank">בית משפט אשקלון</a></td>
+                          </tr>
+                          <tr>
+                            <td>בית משפט השלום, בית משפט לתביעות קטנות</td>
+                            <td><a href="https://www.gov.il/he/departments/bureaus/courts_reception_of_the_public_ashdod" target="_blank">בית משפט אשדוד</a></td>
+                          </tr>
+                          <tr>
+                            <td>בית משפט לעניינים מקומיים</td>
+                              <td><a href="https://www.gov.il/he/departments/bureaus/local_affairs_court_reception_of_the_public_tel_aviv" target="_blank">בית משפט ת"א</a></td>
+                          </tr>
+                          <tr>
+                            <td>בית משפט לתעבורה, בית משפט לנוער, בית משפט לתביעות קטנות</td>
+                              <td><a href="https://www.gov.il/he/departments/bureaus/courts_reception_of_the_public_rishonlezion" target="_blank">בית משפט ראשון לציון</a></td>
+                            </tr>
+                            <tr>
+                              <td>בית משפט השלום</td>
+                            <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_afula" target="_blank">בית משפט עפולה</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לתביעות קטנות</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/courts_reception_of_the_public_tiberias" target="_blank">בית משפט טבריה</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לנוער</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/juvenile_courts_reception_of_the_public_rehovot" target="_blank">בית משפט רחובות</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לדיני משפחה</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/family_courts_reception_of_the_public_beit_shemesh" target="_blank">בית משפט בית שמש</a></td>
+                                                            <tr>
+                                                              <td>בית משפט השלום</td>
+                            <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_afula" target="_blank">בית משפט עפולה</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לתביעות קטנות</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_katsrin" target="_blank">בית משפט קצרין</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לנוער, בית משפט לתביעות קטנות</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/local_affairs_court_reception_of_the_public_ariel" target="_blank">בית משפט אריאל</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לדיני משפחה, בית משפט לענייני תעבור, בית משפט לדיני משפחה</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_ramla" target="_blank">בית משפט רמלה</a></td>
+                            <tr>
+                            <td>בית משפט השלום, בית משפט לדיני משפחה</td>
+                            <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_jerusalem" target="_blank">בית משפט ירושלים</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לתביעות קטנות, בית משפט לענייני תעבורה, בית משפט השלום</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/courts_reception_of_the_public_tiberias" target="_blank">בית משפט טבריה</a></td>
+                          </tr>
+                            <tr>
+                              <td>בית משפט לנוער</td>
+                                <td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_qiryat_gat" target="_blank">בית משפט קרית גת</a></td>
+                                                                
+                          </tr><tr><td>בית משפט לדיני משפחה, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/district_courts_reception_of_the_public_lod" target="_blank">בית משפט לוד</a></td>
+                          </tr><tr><td>בית משפט לדיני עבירות תנועה קלות וחמורות מתוקף פקודת התעבורה ופקודת הביטוח לרכב מנועי</td><td><a href="https://www.gov.il/he/departments/bureaus/traffic_courts_reception_of_the_public_jerusalem" target="_blank">בית המשפט לתעבורה בירושלים</a></td>
+                          </tr><tr><td>בית משפט לדיני עבירות תנועה קלות וחמורות מתוקף פקודת התעבורה ופקודת הביטוח לרכב מנועי</td><td><a href="https://www.gov.il/he/departments/bureaus/traffic_courts_reception_of_the_public_haifa" target="_blank">בית המשפט לתעבורה בחיפה</a></td>
+                          </tr><tr><td>בית משפט לדיני עבירות תנועה קלות וחמורות מתוקף פקודת התעבורה ופקודת הביטוח לרכב מנועי</td><td><a href="https://www.gov.il/he/departments/bureaus/traffic_courts_reception_of_the_public_beer_sheva" target="_blank">בית המשפט לתעבורה - מחוז הדרום - באר שבע</a></td>
+                          </tr><tr><td>בית משפט לדיני עבירות תנועה קלות וחמורות מתוקף פקודת התעבורה ופקודת הביטוח לרכב מנועי</td><td><a href="https://www.gov.il/he/departments/bureaus/traffic_courts_reception_of_the_public_petah_tikva" target="_blank">בית המשפט לתעבורה - מחוז המרכז - פתח תקווה</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_kfar_saba" target="_blank">בית משפט השלום בכפר סבא</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_beer_sheva" target="_blank">בית משפט השלום בבאר שבע</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_haifa" target="_blank">בית המשפט השלום בחיפה</a></td>
+                          </tr><tr><td>בית משפט המחוזי בת"א נידונים תיקים פליליים בעבירות שעונשן הוא מעל 7 שנות מאסר</td><td><a href="https://www.gov.il/he/departments/bureaus/district_courts_reception_of_the_public_tel_aviv" target="_blank">בית המשפט המחוזי בתל אביב</a></td>
+                          </tr><tr><td>בית משפט המחוזי בחיפה נידונים תיקים פליליים בעבירות שעונשן הוא מעל 7 שנות מאסר</td><td><a href="https://www.gov.il/he/departments/bureaus/district_courts_reception_of_the_public_haifa" target="_blank">בית המשפט המחוזי - חיפה</a></td>
+                          </tr><tr><td>בית משפט המחוזי בבאר שבע נידונים תיקים פליליים בעבירות שעונשן הוא מעל 7 שנות מאסר</td><td><a href="https://www.gov.il/he/departments/bureaus/district_courts_reception_of_the_public_beer_sheva" target="_blank">בית המשפט המחוזי בבאר שבע</a></td>
+                          </tr><tr><td>לבית-המשפט העליון שני כובעים מקבילים: האחד, ערכאת הערעור העליונה במדינת ישראל; השני, בית-משפט גבוה לצדק (בג"ץ) השומע עתירות נגד רשויות ציבוריות שונות כערכאה ראשונה וכן כנגד פסקי-דין של בתי-דין לערעורים</td><td><a href="https://supreme.court.gov.il/Pages/HomePage.aspx" target="_blank">בית המשפט העליון</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_netanya" target="_blank">בית משפט השלום בנתניה</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_petah_tikva" target="_blank">בית משפט השלום בפתח תקווה</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_eilat" target="_blank">בית משפט השלום באילת</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_hadera" target="_blank">בית משפט השלום בחדרה</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_tiberias" target="_blank">בית משפט השלום בטבריה</a></td>
+                          </tr><tr><td>בית משפט השלום, בית משפט לתביעות קטנות</td><td><a href="https://www.gov.il/he/departments/bureaus/magistrates_courts_reception_of_the_public_bat_yam" target="_blank">בית משפט השלום בבת ים</a></td>
+
+
+                    </table>
+                        <script type="text/javascript">
+                         function newSrc() {
+                          var e = document.getElementById("MySelectMenu");
+                          var newSrc = e.options[e.selectedIndex].value;
+                          document.getElementById("MyFrame").src=newSrc;
+                         }
+                            
+                        function myFunction() {
+                          // Declare variables
+                          var input, filter, table, tr, td, i, txtValue;
+                          input = document.getElementById("myInput");
+                          filter = input.value.toUpperCase();
+                          table = document.getElementById("myTable");
+                          tr = table.getElementsByTagName("tr");
+            
+                          // Loop through all table rows, and hide those who don't match the search query
+                          for (i = 0; i < tr.length; i++) {
+                            td = tr[i].getElementsByTagName("td")[0];
+                            if (td) {
+                              txtValue = td.textContent || td.innerText;
+                              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[i].style.display = "";
+                              } else {
+                                tr[i].style.display = "none";
+                              }
+                            }
+                          }
+                        }
+                    </script>
+
+
+                </div>
+                
+                <div>
+    <select id="MySelectMenu" style="width:1050px;height:35px; margin-top: 50px; text-align: right; float: right;">
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=194061.33,652500.98&z=3&lay=KIDS_G,BATEI_MISHPAT,URBANRENEWAL_SETTLMENT&bs=BATEI_MISHPAT,URBANRENEWAL_SETTLMENT|179434,652984">חפש לפי עיר...</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=179426.57,652993.06&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=181527.3,644630.79&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|181510,644601">רחובות</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=264789.73,766607.81&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|264778,766616">קצרין</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=198866.99,628544.04&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|198822,628525">בית שמש</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=227147.29,723835.33&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|227138,723851">עפולה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=187645.3,648676.05&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|187645,648690">רמלה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=180034.88,664970.71&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|180137,664985">תל אביב</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=249530.92,744470.5&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|249570,744465">טבריה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=167699.22,634774.84&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|167677,634786">אשדוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=158750.99,619297.97&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|158710,619281">אשקלון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=215806.07,689517.47&z=2&lay=KIDS_G,BATEI_MISHPAT,URBANRENEWAL_SETTLMENT&bs=BATEI_MISHPAT,URBANRENEWAL_SETTLMENT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=216271.44,667932.9&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|216262,667946">אריאל</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=189898.72,650327.71&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|189904,650349">לוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=178850.55,612375.82&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|178899,612313">קרית גת</option> <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=179426.57,652993.06&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=181527.3,644630.79&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|181510,644601">רחובות</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=264789.73,766607.81&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|264778,766616">קצרין</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=198866.99,628544.04&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|198822,628525">בית שמש</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=227147.29,723835.33&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|227138,723851">עפולה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=187645.3,648676.05&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|187645,648690">רמלה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=180034.88,664970.71&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|180137,664985">תל אביב</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=249530.92,744470.5&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|249570,744465">טבריה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=167699.22,634774.84&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|167677,634786">אשדוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=158750.99,619297.97&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|158710,619281">אשקלון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=215806.07,689517.47&z=2&lay=KIDS_G,BATEI_MISHPAT,URBANRENEWAL_SETTLMENT&bs=BATEI_MISHPAT,URBANRENEWAL_SETTLMENT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=216271.44,667932.9&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|216262,667946">אריאל</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=189898.72,650327.71&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|189904,650349">לוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=178850.55,612375.82&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|178899,612313">קרית גת</option> <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=179426.57,652993.06&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=181527.3,644630.79&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|181510,644601">רחובות</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=264789.73,766607.81&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|264778,766616">קצרין</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=198866.99,628544.04&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|198822,628525">בית שמש</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=227147.29,723835.33&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|227138,723851">עפולה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=187645.3,648676.05&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|187645,648690">רמלה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=180034.88,664970.71&z=9&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|180137,664985">תל אביב</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=249530.92,744470.5&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|249570,744465">טבריה</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=167699.22,634774.84&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|167677,634786">אשדוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=158750.99,619297.97&z=8&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|158710,619281">אשקלון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=215806.07,689517.47&z=2&lay=KIDS_G,BATEI_MISHPAT,URBANRENEWAL_SETTLMENT&bs=BATEI_MISHPAT,URBANRENEWAL_SETTLMENT|179434,652984">ראשון לציון</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=216271.44,667932.9&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|216262,667946">אריאל</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=189898.72,650327.71&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|189904,650349">לוד</option>
+     <option value="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=178850.55,612375.82&z=10&lay=BATEI_MISHPAT&bs=BATEI_MISHPAT|178899,612313">קרית גת</option>
+    
+    
+    </select>
+    <button onClick="newSrc();" id="findOnMap" on style="text-align: right; position: absolute; left: 65%;">מצא בית משפט</button>
+                     
+    <iframe src="https://www.govmap.gov.il/map.html?bb=1&zb=1&in=1&c=193977.9,669541.39&z=2&lay=BATEI_MISHPAT,URBANRENEWAL_SETTLMENT" style="width:1050px;height:350px;overflow:scroll; margin-top: 50px;" id="MyFrame"></iframe>
+
+        </body>
+        
+        </html>   
+    
+    </DOCTYPE>
